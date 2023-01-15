@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+header {
+    background-color: blueviolet;
+    padding: 16px 0;
+    color: whitesmoke;
+    display: flex;
+    border-bottom: 16p solid rgb(107, 33, 176);
+    justify-content: center;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+header button {
+    margin-left: 16px;
+}
+
+form {
+    background-color: #c8d6e5;
+    padding: 24px 0;
+    text-align: center;
+    display: none;
+}
+
+form h2 {
+    margin-bottom: 16px;
+}
+
+input, button {
+    padding: 8px;
+    height: 40px;
+    width: 160px;
+}
+
+
+header button {
+    background-color: rgb(93, 44, 138);
+    border:none;
+    cursor:pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: whitesmoke;
+    border-radius: 30px;
+}
+
+#btn-cancel {
+    background-color: red;
+    cursor: pointer;
+    
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul li {
+    max-width: 20%;
+    list-style: none;
+    position: relative; /*para não extravasar o limite da imagem, o PAI tem que ser relative se o filho é absolute*/
+    max-height: 280px;
+    overflow-y:hidden;/*todo o conteúdo que ultrapassar o limite, não será exibido / o eixo Y é por se tratar do eixo vertical*/
+}
+
+ul li img {
+    width: 100%; 
+}
+
+.overlay-bar {
+    padding: 16px;
+    background-color: rgba(0,0,0,0.7); /* para aplicar transparência, tem que ser rgba*/
+    position: absolute; /*posicionar no canto inferior do li*/
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0 ; /*Fica oculto, até que o mouse esteja no local*/
+}
+
+.overlay-bar a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+ul li .overlay-bar:hover {
+    opacity: 1;
+}
