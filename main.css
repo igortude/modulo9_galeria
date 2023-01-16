@@ -60,7 +60,7 @@ ul {
 }
 
 ul li {
-    max-width: 20%;
+    max-width: 25%;
     list-style: none;
     position: relative; /*para não extravasar o limite da imagem, o PAI tem que ser relative se o filho é absolute*/
     max-height: 280px;
@@ -79,6 +79,7 @@ ul li img {
     left: 0;
     width: 100%;
     opacity: 0 ; /*Fica oculto, até que o mouse esteja no local*/
+    transition: all ease 1s;
 }
 
 .overlay-bar a {
@@ -88,4 +89,5 @@ ul li img {
 
 ul li .overlay-bar:hover {
     opacity: 1;
+    
 }
